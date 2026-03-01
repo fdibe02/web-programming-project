@@ -8,7 +8,6 @@ Il progetto implementa architettura MVC e gestione delle rotte tramite controlle
 ## Funzionalità principali
 - Registrazione e login utenti
 - Creazione articoli
-- Modifica articoli
 - Visualizzazione profili
 - Aggiunta di like/preferiti
 - Sezione articoli preferiti
