@@ -1,7 +1,7 @@
 # Web Programming Project
 
 ## Descrizione
-Applicazione web sviluppata in Laravel che permette la gestione di articoli con sistema di autenticazione utenti.
+Applicazione web (clode "base" di Medium) sviluppata in Laravel che permette la gestione di articoli con sistema di autenticazione utenti.
 
 Il progetto implementa architettura MVC e gestione delle rotte tramite controller dedicati.
 
@@ -10,6 +10,10 @@ Il progetto implementa architettura MVC e gestione delle rotte tramite controlle
 - Creazione articoli
 - Modifica articoli
 - Visualizzazione profili
+- Aggiunta di like/preferiti
+- Sezione articoli preferiti
+- Ricerca articoli per nome o categoria
+- Nascondi articoli/Dislike
 - Routing strutturato
 - Separazione logica / view tramite Blade
 
@@ -25,7 +29,7 @@ Il progetto implementa architettura MVC e gestione delle rotte tramite controlle
 - `app/Http/Controllers` → Logica applicativa
 - `app/Models` → Modelli Eloquent
 - `resources/views` → Template Blade
-- `routes/web.php` → Definizione rotte
+- `routes/web.php` → Definizione routes
 
 ## Installazione
 
