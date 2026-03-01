@@ -1,0 +1,350 @@
+body{
+  background-color: #f9f9eb;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+  padding-bottom: 20px;
+}
+
+#logo {
+  font-size: 2rem;
+  font-family: "SemiBold600";
+  font-weight: 800;
+  margin-top: 20px;
+  margin-left: 100px;
+}
+
+#start{
+  display: flex;
+  width: 417px;
+  margin-right: 100px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+header .register, #main .register{
+  color: white;
+  font-size: 12.5px;
+  background-color: black;
+  width: 105px;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+#main{
+  display: flex;
+  flex-direction: column;
+  margin-left: 110px;
+}
+
+#main h1{
+  font-size: 5.5rem;
+  margin-bottom: 35px;
+}
+
+#main h3{
+  margin-top: 0;
+  font-size: 1.8rem;
+}
+
+#main .register{
+  margin-top: 30px;
+  width: 200px;
+  height: 50px;
+  border-radius: 30px;
+  padding: 0;
+  font-size: 1.25rem; 
+}
+
+footer{
+  display: flex;
+  font-size: 15px;
+  justify-content: center;
+  border-top: 1px solid black;
+  padding-top: 10px;
+  height: 50px;
+}
+
+footer a{
+  margin-left: 15px;
+  margin-top: 7.5px;
+  color: gray;
+  cursor: pointer;
+}
+
+
+#modal-register, #modal-login{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#form-register{
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  height: 700px;
+  width:  678px;
+  background-color: white;
+  border-radius: 5px;
+  align-items: center;
+}
+
+#form-login{
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  height: 450px;
+  width:  678px;
+  background-color: white;
+  border-radius: 5px;
+  align-items: center;
+}
+
+#form-register h3, #form-login h3{
+  margin-top: 15px;
+  font-weight: 0;
+}
+
+#form-login h3{
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-weight: 0;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.nome, .cognome, .password, .email, .conf-password{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 12.5px;
+}
+
+.nome span, .cognome span, .password span, .email span, .conf-password span{
+  margin-top: 5px;
+  margin-right: 27.5%;
+  font-size: 15px;
+}
+
+.nome span.hidden, .cognome span.hidden, .password span.hidden, .email span.hidden, .conf-password span.hidden{
+  visibility: hidden;
+}
+
+.error{
+  color: red;
+  font-weight: 500;
+}
+
+#modal-login .error{
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+label{
+  margin-bottom: 8.5px;
+}
+
+input{
+  width: 50%;
+  height: 35px;
+  border: 0.5px solid black;;
+  border-radius: 5px;
+  background-color: rgb(249, 249, 249);
+  font-size: 15px;
+}
+
+input:hover{
+  border: 1.5px solid black;
+}
+
+input:focus{
+  border: 1.5px solid black;
+  outline: none;
+}
+
+#form-register a{
+  font-size: 18px;
+  margin-bottom: 10px;
+  margin-top: 12.5px;
+  height: 10px;
+}
+
+#form-login a{
+  font-size: 18px;
+  margin-top: 10px;
+  height: 10px;
+}
+
+#form-register input[type=submit], #form-login [type=submit]{
+  display: flex;
+  color: white;
+  height: 45px;
+  width: 140px;
+  font-size: 14px;
+  background-color: black;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-left: 40%;
+  margin-top: 15px;
+}  
+
+#form-register strong:hover, #form-login strong:hover{
+  border-bottom: 0.75px solid black;
+  cursor: pointer;
+}
+
+.exit{
+  text-align: end;
+  font-size: 30px;
+  width: 96%;
+  height: 30px;
+  color: gray;
+  cursor: pointer;
+}
+
+.exit:hover{
+  color: black;
+}
+
+#modal-register.hidden, #modal-login.hidden{
+  display: none;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+
+@media (max-width: 500px){
+
+  #logo{
+    margin-left: 40px;
+  }    
+
+  #story, #write, #membership, #start .register{
+    display: none;
+  }
+
+  header .login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+  }
+    
+  #main{
+    margin-bottom: 200px;
+    margin-left: 65px;
+  }
+
+  #main h1{
+    font-size: 4rem;
+  }
+
+  #main .register{
+    margin-top: 50px;
+    width: 300px;
+    height: 75px;
+    border-radius: 50px;
+    padding: 0;
+    font-size: 1.5rem; 
+  }
+
+  footer{
+    display: none;
+  }
+
+  #form-register {
+    height: 75vh;
+    width:  90vw;
+  }
+
+  #form-register h3, #form-login h3{
+    font-size: 25px;
+  }
+
+  #form-register label, #form-login label{
+    font-size: 20px;
+  }
+
+  #form-register input, #form-login input{
+    width: 60%;
+    height: 40px;
+    border: 0.5px solid black;;
+    border-radius: 5px;
+    background-color: rgb(249, 249, 249);
+    font-size: 20px;
+  }
+
+  #form-register input[type=submit]{
+    margin-left: 125px;
+    height: 55px;
+    width: 150px;
+    font-size: 17px;
+    border-radius: 30px;
+  }
+
+  #form-register a, #form-login a{
+    font-size: 22px;
+    margin-top: 20px;
+    height: 10px;
+  }
+
+  #form-login input[type=submit]{
+    margin-left: 145px;
+    height: 55px;
+    width: 150px;
+    font-size: 20px;
+  }
+
+}
+
+
+
+
+
+  
+
+  
+
+
+  
+
+
+

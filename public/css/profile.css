@@ -1,0 +1,173 @@
+section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 250px;
+  margin-top: 50px;
+}
+
+section h2{
+  font-family: "Roboto";
+  font-weight: 500;
+  width: 60vw;
+  font-size: 2.5em;
+  border-bottom: 0.5px solid lightgrey;
+}
+
+#user-bar{
+  display: flex;
+  align-items: center;
+}
+
+section h3{
+  font-size: 1.5em;
+}
+
+#liked-articles{
+  display: flex;
+  font-family: "inter";
+  width: 67.5vw;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: rgb(241, 240, 240);
+  border-radius: 6px;
+}
+
+.card-space{
+  text-decoration: none;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 250px;
+  width: 260px;
+  margin: 30px;
+  background-color: white;
+  border-radius: 6px;
+}
+
+.card:hover{
+    border: 1.2px solid rgb(107, 107, 107);
+  }
+
+.card h5{
+    font-size: 1em;
+    margin-top: 12px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: "Inter", Helvetica;
+    color: black;
+  }
+
+.card a{
+    margin-bottom: 20px;
+    font-size: 1em;
+    width: 90%;
+    font-family: sans-serif;
+    color: #808080;
+    text-decoration: none;
+  }
+
+.card img{
+    height: 80px;
+    width: 150px;
+    margin-bottom: 15px;
+  }
+  
+#logout{
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    font-size: 13px;
+    font-weight: 300;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 80px;
+    height: 30px;
+    border-radius: 20px;
+    color: rgb(108, 108, 108);
+    border: 2px solid rgb(186, 186, 186);
+  }
+
+
+@media (max-width: 500px){
+
+  section{
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 0;
+  }
+
+  #user-bar{
+  justify-content: space-between;
+}
+
+  section h2{
+    font-weight: 450;
+    font-size: 2em;
+  }
+
+  #logout{
+    font-size: 10px;
+    margin-left: 30px;
+    font-weight: 300;
+    width: 60px;
+    height: 22px;
+    border: 1.8px solid rgb(186, 186, 186);
+  }
+
+  section h3{
+  font-size: 1.3em;
+
+}
+
+#liked-articles{
+  display: flex;
+  font-family: "inter";
+  width: 95vw;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: rgb(241, 240, 240);
+  border-radius: 6px;
+}
+
+  .card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 160px;
+  width: 180px;
+  margin: 10px;
+  background-color: white;
+  border-radius: 6px;
+}
+
+.card img{
+    height: 60px;
+    width: 100px;
+    margin-bottom: 10px;
+  }
+
+  .card a{
+    font-size: 0.9em;
+    margin-bottom: 10px;;
+  }
+
+  .card a{
+    margin-bottom: 20px;
+    font-size: 0.8em;
+    width: 90%;
+    font-family: sans-serif;
+    color: #808080;
+    text-decoration: none;
+  }
+
+  
+
+
+  }
