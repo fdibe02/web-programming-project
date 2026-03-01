@@ -8,9 +8,7 @@ use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\WriteController;
 
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [HomeController::class, 'showHomePage']);
 
 Route::get('auth', [AuthController::class, 'showAuthPage']);
 Route::post('login', [AuthController::class, 'login']);
